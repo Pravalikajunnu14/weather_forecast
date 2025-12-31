@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+header p {
+    margin: 5px 0 25px;
+    font-weight: 300;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 12px;
+    width: 65%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #ff4b1f;
+    background: linear-gradient(to right, #ff9068, #ff4b1f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+.weather-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: none;
+    text-align: center;
+}
+
+.weather-result.visible {
+    display: block;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.weather-header h2 {
+    margin: 0;
+    font-size: 26px;
+}
+.weather-header img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-result p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.recent-searches {
+    margin-top: 25px;
+    text-align: left;
+}
+.recent-searches h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.recent-searches ul {
+    list-style: none;
+    padding: 0;
+}
+.recent-searches li {
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.recent-searches li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #eee;
+}

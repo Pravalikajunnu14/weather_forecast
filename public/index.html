@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast App</h1>
+            <p>Enter a city name to get current weather</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="e.g., Hyderabad">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div id="weatherResult" class="weather-result hidden">
+                <div class="weather-header">
+                    <h2 id="cityName"></h2>
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                </div>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+                <p id="condition"></p>
+            </div>
+
+            <section class="recent-searches">
+                <h3>Recent Searches</h3>
+                <ul id="recentSearches"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <small>Built with Node.js & OpenWeatherMap API</small>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
