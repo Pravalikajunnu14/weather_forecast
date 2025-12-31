@@ -27,7 +27,7 @@ Navigate to the project folder:
 cd weather_forecast
 
 
-Install required libraries (if Python):
+Install required libraries:
 
 pip install -r requirements.txt
 
